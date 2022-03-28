@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="10sp"
+    android:orientation="vertical"
+    android:padding="5sp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:fontFamily="monospace"
+        android:text="BÀI THI GIỮA KỲ ANDROID
+                       ĐÀO ĐỨC TRƯỞNG"
+        android:textAlignment="center"
+        android:textColor="#87CEFA"
+        android:textSize="20dp"
+        android:layout_marginBottom="27dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="MSSV: "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#0091EA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mssvTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="MSSV"
+            android:textColor="#00BFFF"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="HỌ VÀ TÊN: "
+            android:textSize="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#0091EA"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tenTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="HỌ VÀ TÊN"
+            android:textColor="#00BFFF"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="EMAIL"
+            android:textSize="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#0091EA"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="EMAIL"
+            android:textColor="#00BFFF"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="HỌC PHẦN"
+            android:textSize="20dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#0091EA"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/hpTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="HỌC PHẦN"
+            android:textColor="#00BFFF"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/insertBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0F8FF"
+            android:text="THÊM"
+            android:textColor="#00BFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0F8FF"
+            android:padding="5sp"
+            android:text="SỬA"
+            android:textColor="#00BFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0F8FF"
+            android:padding="15sp"
+            android:text="XOÁ"
+            android:textColor="#00BFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="25dp">
+        <Button
+            android:id="@+id/viewBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F0F8FF"
+            android:padding="15dp"
+            android:text="XEM DANH SÁCH"
+            android:textColor="#00BFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
